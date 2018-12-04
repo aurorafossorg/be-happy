@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Modify this file to customize your launch splash screen -->
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
-	<item android:drawable="@android:color/white" />
-
-	<item>
-		<bitmap
-			android:gravity="center"
-			android:src="@mipmap/ic_launcher" />
-			<!-- android:src="@mipmap/launch_image" /> -->
-	</item>
+	<item android:drawable="@color/happiness_color" />
+	
+	<item
+		android:width="250dp"
+		android:height="83.333dp"
+		android:gravity="center"
+		android:top="175dp"
+		android:drawable="@drawable/smile"/>
 </layer-list>
