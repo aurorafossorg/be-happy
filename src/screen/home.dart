@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_webview_plugin/flutter_webview_plugin.dart';
 
 class HomeScreen extends StatefulWidget {
 	@override
@@ -9,8 +8,29 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
 	@override
 	Widget build(BuildContext context) {
-		return new WebviewScaffold(
-			url: "https://behappy.aurorafoss.org"
+		return new Scaffold(
+			drawer: Drawer(
+				child: ListView(
+					children: <Widget>[
+						ListTile(
+							title: Text('Settings'),
+							onTap: () {
+							},
+						),
+					],
+				),
+			),
+			body: Center(
+				child: FlatButton(
+					onPressed: () {
+					},
+					child: Text(
+						"Make me happy!",
+						style: TextStyle(
+							fontFamily: 'Tahu!',
+							fontSize: 45)
+					))
+			),
 		);
 	}
 }

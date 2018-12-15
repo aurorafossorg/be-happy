@@ -7,6 +7,5 @@
 		android:width="250dp"
 		android:height="83.333dp"
 		android:gravity="center"
-		android:top="175dp"
 		android:drawable="@drawable/smile"/>
 </layer-list>
