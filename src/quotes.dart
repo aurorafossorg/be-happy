@@ -7,8 +7,8 @@ Future<String> getNewQuote(Future<CacheManager> cacheManager) async
 {
 	var manager = await cacheManager;
 	var file = await manager.getFile("https://behappy.aurorafoss.org/res/values/"+window.locale.toString().replaceFirst("_", "-")+"/quotes.xml");
-	var quote_document = xml.parse(file.readAsStringSync());
-	var quotes = quote_document.findAllElements("quote").toList();
+	var quoteDocument = xml.parse(file.readAsStringSync());
+	var quotes = quoteDocument.findAllElements("quote").toList();
 
 	return quotes[new Random().nextInt(quotes.length)].text;
 }
