@@ -21,11 +21,11 @@ build:
   only:
     - merge_requests
 
-uinttests:
-  stage: test
-  script:
-    - flutter test test/*
-  tags:
-    - shared
-  only:
-    - merge_requests
+# uinttests:
+#   stage: test
+#   script:
+#     - flutter test test/*
+#   tags:
+#     - shared
+#   only:
+#     - merge_requests
